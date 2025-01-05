@@ -50,6 +50,22 @@ html {
   /* 4 */
 }
 
+h2 {
+  margin-top: -20px;
+}
+
+@media (max-width: 768px) {
+  h2 {
+    margin-top: -30px;
+  }
+}
+
+@media (max-width: 480px) {
+  h2 {
+    margin-top: -50px;
+  }
+}
+
 /*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
@@ -414,6 +430,11 @@ video {
   height: auto;
 }
 
+.lg:-not(lg) {
+  /* Make elements adapt to smaller screens */
+  display: flex;
+  flex-wrap: wrap;
+}
 /* Make elements with the HTML hidden attribute stay hidden by default */
 
 [hidden] {

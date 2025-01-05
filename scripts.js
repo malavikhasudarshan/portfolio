@@ -8,6 +8,8 @@ mobileMenuTrigger.addEventListener('click', function () {
     mobileMenu.classList.add('translate-x-0');
 });
 
+//this doesn't work right now
+
 //  Close mobile menu when the menu button is clicked
 mobileMenuClose.addEventListener('click', function () {
     mobileMenu.classList.add('translate-x-full');

@@ -42,15 +42,15 @@
     <section class="pt-8 md:pt-28 pb-8 lg:pb-8">
         <div class="container grid grid-cols-12 gap-8">
             <div class="col-span-12 lg:col-span-8">
-                <h1 class="text-lg">Salonat</h1>
-                <h2 class="text-xl md:text-2xl lg:text-3xl font-medium">Premium furniture ecommerce website</h2>
+                <h1 class="text-lg">Computer Vision, Interactive Art</h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-medium">Pose-Driven Interactive Water Ripples</h2>
             </div>
         </div>
     </section>
     <!--=================================-->
     <!--==== Cover Image ================-->
     <!--=================================-->
-    <section class="h-64 lg:h-screen-90 w-full bg-no-repeat bg-center bg-cover" style="background-image: url(./images/case_study_1.png);"></section>
+    <section class="h-64 lg:h-screen-90 w-full bg-no-repeat bg-center bg-cover" style="background-image: url(./assets/ripples1.png);"></section>
     <!--=================================-->
     <!--==== Content ====================-->
     <!--=================================-->
@@ -73,7 +73,45 @@
                     <p class="text-sm mb-4">URL</p>
                     <a class="font-medium underline" href="https://www.salonatstore.com/">www.salonatstore.com</a>
                 </div>
-                <p class="col-span-12 lg:col-span-10 text-lg font-medium my-8">Lorem ipsum dolor sit amet consectetur. Praesent vestibulum eu vitae odio at leo magna ut. Elementum cras adipiscing egestas vivamus consequat fringilla.</p>
+                <div class="col-span-12 lg:col-span-10 text-lg font-medium my-8">
+                    <p>
+                      A creative, interactive visual project using <strong>ML5.js</strong> and <strong>p5.js</strong> to simulate dynamic water ripples based on human motion detection. This program detects keypoints from a live camera feed, generates ripples where motion is detected, and overlays them on a flowing, water-like background with a pixelated, noise-driven effect.
+                    </p>
+                  
+                    <h2 class="mt-8">Features</h2>
+                    <ul class="list-disc ml-5">
+                      <li><strong>- Real-Time Pose Detection</strong>: Utilises the <strong>ML5.js</strong> <code>bodyPose</code> model to track body keypoints with confidence thresholds.</li>
+                      <li><strong>- Dynamic Ripple Effects</strong>: Ripples appear at detected keypoint positions and fade away after 10 seconds.</li>
+                      <li><strong>- Flowing Water Background</strong>: A noise-driven animation mimics the appearance of flowing water.</li>
+                    </ul>
+                  
+                    <h2 class="mt-8">Technologies</h2>
+                    <ul class="list-disc list-inside ml-5">
+                      <li><strong>- ML5.js</strong>: For real-time human pose detection using the <code>bodyPose</code> model.</li>
+                      <li><strong>- p5.js</strong>: For interactive visuals, animation, and drawing the water ripples and background.</li>
+                      <li><strong>- JavaScript</strong>: Core logic for handling pose detection, ripple timing, and dynamic rendering.</li>
+                    </ul>
+                  
+                    <h2 class="mt-8">How It Works</h2>
+                    <ol class="ml-5">
+                      <li><strong>- Pose Detection:</strong>
+                        <ul class="ml-5">
+                          <li>A live video feed is captured using <code>p5.Video</code>.</li>
+                          <li>The <code>bodyPose</code> model identifies keypoints of the body (e.g., eyes, hands, elbows, knees).</li>
+                        </ul>
+                      </li>
+                      <li><strong>- Ripple Generation:</strong>
+                        <ul class="ml-5">
+                          <li>When keypoints exceed a confidence threshold, a ripple effect is generated at the corresponding location.</li>
+                          <li>Ripples grow and fade over time, disappearing after 10 seconds.</li>
+                        </ul>
+                      </li>
+                      <li><strong>- Water Background:</strong>
+                        <ul class="ml-5">
+                          <li>A noise-based color grid creates a dynamic, flowing water effect as the backdrop.</li>
+                        </ul>
+                      </li>
+                    </ol>
             </div>
             <img class="col-span-full mb-8" src="./images/case_study_2.png" alt="">
             <img class="col-span-full md:col-span-6 mb-8" src="./images/case_study_3.png" alt="">
@@ -86,19 +124,17 @@
     <!--=================================-->
     <footer class="pt-24 pb-8 bg-bg">
         <div class="container relative grid grid-cols-12 gap-8">
-            <div class="col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-16 lg:mb-24 ">
-                <h2 class="text-2xl lg:text-3xl font-medium">Get in touch</h2>
-                <a href="#" class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Let’s talk</a>
+            <div class="col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-8 lg:mb-16 ">
+            <a href="./contact.html" class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Let’s talk</a>
             </div>
             <div class="col-span-12 md:col-span-10 lg:col-span-8 col-start-1 md:col-start-2 lg:col-start-3 flex flex-col md:flex-row items-center justify-start md:justify-between space-y-4 md:space-y-0 text-lg font-medium mb-8">
-                <a href="#">Github</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Twitter</a>
-                <a href="#">Instagram</a>
+                <a href="https://github.com/malavikhasudarshan">Github</a>
+                <a href="https://scholar.google.com/citations?user=aVM9PUkAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/malavikha-sudarshan/">LinkedIn</a>
             </div>
-            <div class="col-span-12 flex flex-col md:flex-row items-center md:items-start justify-start md:justify-between space-y-4 md:space-y-0">
+            <div class="col-span-12 flex flex-col md:flex-row items-center md:items-start justify-start md:justify-between space-y-4 md:space-y-0"  style="color: white;">
                 <p>© 2022 All rights reserved.</p>
-                <p>Designed by <a class="font-bold" href="https://www.myoussouf.com/">MYoussouf</a></p>
+                <p>Forked from <a href="https://www.myoussouf.com/">MYoussouf</a></p>
             </div>
         </div>
     </footer>

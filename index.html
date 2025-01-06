@@ -23,12 +23,12 @@
     <header class="bg-bg pt-10 lg:pt-8 pb-0 lg:pb-16">
         <div class="container">
             <nav class="flex justify-between font-medium">
-                <a class="hidden md:inline" href="about.html">About</a>
-                <a class="hidden md:inline" href="contact.html">Roles</a>
-                <a class="hidden md:inline" href="work.html">Projects + Papers</a>
-                <a class="hidden md:inline" href="index.html">Art + Design</a> 
+                <a class="hidden md:inline" href="index.html">About</a>
+                <a class="hidden md:inline" href="roles.html">Roles</a>
+                <a class="hidden md:inline" href="projects.html">Projects + Papers</a>
+                <a class="hidden md:inline" href="art.html">Art + Design</a> 
                 <!-- use an anchor tag to link to photography section and have contact info underneath -->
-                <a class="hidden md:inline" href="contact.html">Photography</a>
+                <a class="hidden md:inline" href="photography.html">Photography</a>
                 <button id="mobile_menu_trigger" class="inline md:hidden"><svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="24" height="4" fill="#201F27"/>
                     <rect x="12" y="10.5" width="12" height="4" fill="#201F27"/>
@@ -46,7 +46,7 @@
                         <path d="M1.516 2.033c1.748 0 26.808-4.08 26.808 22.146v11.655" stroke="#000" stroke-width="2" stroke-linecap="round"/>
                         <path d="M36.484 28.841 28.325 37l-8.159-8.159" stroke="#000" stroke-width="2" stroke-linecap="round"/>
                       </svg></span>
-                    <a href="./contact.html" class="bg-primary hover:bg-transparent col-span-6 md:col-span-2 lg:col-span-2 px-8 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full self-start no-underline transition-colors duration-150">Get in touch!</a>
+                    <!-- <a href="./contact.html" class="bg-primary hover:bg-transparent col-span-6 md:col-span-2 lg:col-span-2 px-8 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full self-start no-underline transition-colors duration-150">Get in touch!</a> -->
                 </div>
             </div>
             <img class="relative lg:absolute top-8 lg:top-53 lg:-right-44 z-0 mr-36 col-span-12 max-w-md md:max-w-md lg:max-w-lg h-auto display:flex rounded-xl border-4 border-white" src="assets/portrait.jpg" alt="portait photo"> 
@@ -61,6 +61,9 @@
             <h2 class="text-lg md:text-xl lg:text-2xl col-span-12 lg:col-span-8">I'm a fourth-year undergrad studying <b>Computer Science, Art Practice & Data Science</b> at <b>UC Berkeley</b>.</h2>
         </div>
     </section>
+    <!--=================================-->
+    <!--==== Works ======================-->
+    <!--=================================-->
     <!--=================================-->
     <!--==== Works ======================-->
     <!--=================================-->
@@ -86,15 +89,15 @@
             <div class="col-span-12 md:col-span-6">
                 <!-- Project card -->
                 <a href="case-study.html" class="block relative mb-16 mt-32">
-                    <img class="relative -z-10" src="./images/work_thumbnail_1.jpg" alt="">
+                    <img class="relative -z-10" src="./assets/ripples.png" alt="Screenshot of Ripples Interaction">
                     <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
-                        <p>Salonat</p>
-                        <h3 class="text-lg lg:text-xl font-medium"></h3>
+                        <p>Computer Vision, Interactive Art</p>
+                        <h3 class="text-lg lg:text-xl font-medium">Pose-Driven Interactive Water Ripples</h3>
                     </div>
                 </a>
                 <!-- Project card -->
                 <a href="case-study.html" class="block relative mb-16">
-                    <img class="relative -z-10" src="./images/work_thumbnail_2.jpg" alt="">
+                    <img class="relative -z-10" src="./assets/work_thumbnail_2.jpg" alt="">
                     <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
                         <p>Zajil</p>
                         <h3 class="text-lg lg:text-xl font-medium">AI-based cold mailing SAAS website</h3>
@@ -104,7 +107,7 @@
             <div class="col-span-12 md:col-span-6">
                 <!-- Project card -->
                 <a href="case-study.html" class="block relative mb-16">
-                    <img class="relative -z-10" src="./images/work_thumbnail_3.jpg" alt="">
+                    <img class="relative -z-10" src="./assets/work_thumbnail_3.jpg" alt="">
                     <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
                         <p>JD</p>
                         <h3 class="text-lg lg:text-xl font-medium">Portfolio website for an independent designer</h3>
@@ -112,7 +115,7 @@
                 </a>
                 <!-- Project card -->
                 <a href="case-study.html" class="block relative mb-16">
-                    <img class="relative -z-10" src="./images/work_thumbnail_4.jpg" alt="">
+                    <img class="relative -z-10" src="./assets/work_thumbnail_4.jpg" alt="">
                     <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
                         <p>Bayt Property</p>
                         <h3 class="text-lg lg:text-xl font-medium">Real estate services company website
@@ -160,16 +163,15 @@
     <!--=================================-->
     <footer class="pt-24 pb-8 bg-bg">
         <div class="container relative grid grid-cols-12 gap-8">
-            <div class="col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-8 lg:mb-16 ">
-            <a href="./contact.html" class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Let’s talk</a>
-            </div>
+            <!-- <div class="col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-8 lg:mb-16 "> -->
+            <!-- <a href="./contact.html" class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Let’s talk</a> -->
+            <!-- </div> -->
             <div class="col-span-12 md:col-span-10 lg:col-span-8 col-start-1 md:col-start-2 lg:col-start-3 flex flex-col md:flex-row items-center justify-start md:justify-between space-y-4 md:space-y-0 text-lg font-medium mb-8">
-                <a href="#">Github</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">Google Scholar</a>
+                <a href="https://github.com/malavikhasudarshan">Github</a>
+                <a href="https://scholar.google.com/citations?user=aVM9PUkAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/malavikha-sudarshan/">LinkedIn</a>
             </div>
-            <!-- make this text white -->
-            <div class="col-span-12 flex flex-col md:flex-row items-center md:items-start justify-start md:justify-between space-y-4 md:space-y-0">
+            <div class="col-span-12 flex flex-col md:flex-row items-center md:items-start justify-start md:justify-between space-y-4 md:space-y-0"  style="color: white;">
                 <p>© 2022 All rights reserved.</p>
                 <p>Forked from <a href="https://www.myoussouf.com/">MYoussouf</a></p>
             </div>

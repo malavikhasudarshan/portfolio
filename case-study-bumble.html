@@ -23,12 +23,12 @@
     <header class="pt-10 lg:pt-8">
         <div class="container">
             <nav class="flex justify-between font-medium">
-                <a class="hidden md:inline" href="about.html">About</a>
-                <a class="hidden md:inline" href="contact.html">Roles</a>
-                <a class="hidden md:inline" href="work.html">Projects + Papers</a>
-                <a class="hidden md:inline" href="index.html">Art + Design</a> 
+                <a class="hidden md:inline" href="index.html">About</a>
+                <a class="hidden md:inline" href="roles.html">Roles</a>
+                <a class="hidden md:inline" href="projects.html">Projects + Papers</a>
+                <a class="hidden md:inline" href="art.html">Art + Design</a> 
                 <!-- use an anchor tag to link to photography section and have contact info underneath -->
-                <a class="hidden md:inline" href="contact.html">Photography</a>
+                <a class="hidden md:inline" href="photography.html">Photography</a>
                 <button id="mobile_menu_trigger" class="inline md:hidden"><svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <rect y="0.5" width="24" height="4" fill="#201F27"/>
                     <rect x="12" y="10.5" width="12" height="4" fill="#201F27"/>
@@ -42,76 +42,49 @@
     <section class="pt-8 md:pt-28 pb-8 lg:pb-8">
         <div class="container grid grid-cols-12 gap-8">
             <div class="col-span-12 lg:col-span-8">
-                <h1 class="text-lg">Computer Vision, Interactive Art</h1>
-                <h2 class="text-xl md:text-2xl lg:text-3xl font-medium">Pose-Driven Interactive Water Ripples</h2>
+                <h1 class="text-lg">UI/UX Design, Rapid Prototyping</h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-medium">Bumble x Adobe Designathon - Awarded 2nd Place</h2>
             </div>
         </div>
     </section>
     <!--=================================-->
     <!--==== Cover Image ================-->
     <!--=================================-->
-    <section class="h-64 lg:h-screen-90 w-full bg-no-repeat bg-center bg-cover" style="background-image: url(./assets/ripples1.png);"></section>
+    <section class="h-64 lg:h-screen-90 w-full bg-no-repeat bg-center bg-cover" style="background-image: url(./assets/bumble_cover.png);"></section>
     <!--=================================-->
     <!--==== Content ====================-->
     <!--=================================-->
+
+    
     <section class="mt-8 lg:mt-20 pb-16">
         <div class="container grid grid-cols-12 gap-8">
             <div class="col-span-full grid grid-cols-12 gap-8">
                 <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-3">
-                    <p class="text-sm mb-4">Year</p>
-                    <p class="font-medium">2022</p>
-                </div>
-                <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-3">
-                    <p class="text-sm mb-4">Role</p>
-                    <p class="font-medium">Webdesign/dev</p>
-                </div>
-                <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-3">
-                    <p class="text-sm mb-4">Client</p>
-                    <p class="font-medium">Leslie Alexander</p>
-                </div>
-                <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-3">
-                    <p class="text-sm mb-4">URL</p>
-                    <a class="font-medium underline" href="https://www.salonatstore.com/">www.salonatstore.com</a>
+                    <a class="font-medium underline" href="https://www.canva.com/design/DAFopYtCtCQ/UKgsD8jfBU2TgH1oFPp1HQ/view?utm_content=DAFopYtCtCQ&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h2c426b5172">Final Pitch Deck</a>
                 </div>
                 <div class="col-span-12 lg:col-span-10 text-lg font-medium my-8">
-                    <p>
-                      A creative, interactive visual project using <strong>ML5.js</strong> and <strong>p5.js</strong> to simulate dynamic water ripples based on human motion detection. This program detects keypoints from a live camera feed, generates ripples where motion is detected, and overlays them on a flowing, water-like background with a pixelated, noise-driven effect.
-                    </p>
+                  <p>In the 2023 Bumble x Adobe Express Designathon, our team reimagined Bumble’s app experience to address a pressing challenge:</p>
+              
+                  <h2 class="mt-8"><strong>How might Bumble help college students feel comfortable enough to take their digital connections offline?</strong></h2>
+              
+                  <h2 class="mt-8"><strong>Our Team and Approach</strong></h2>
+                  <ul class="list-disc ml-5">
+                      <li>Our team, comprised of Berkeley undergraduates—myself, Madelyn Christensen, Anishi Patel, and Sanjana Nitturkar—collaborated closely over 7 hours to deliver an innovative, user-centered solution. Using <strong>Figma</strong> as our brainstorming and prototyping platform, we created two <strong>user personas</strong> to identify key pain points, crafted a draft Instagram post using <strong>Adobe Express</strong> to showcase our vision, and developed features focused on enhancing safety and facilitating seamless connections.</li>
+                  </ul>
                   
-                    <h2 class="mt-8">Features</h2>
-                    <ul class="list-disc ml-5">
-                      <li><strong>- Real-Time Pose Detection</strong>: Utilises the <strong>ML5.js</strong> <code>bodyPose</code> model to track body keypoints with confidence thresholds.</li>
-                      <li><strong>- Dynamic Ripple Effects</strong>: Ripples appear at detected keypoint positions and fade away after 10 seconds.</li>
-                      <li><strong>- Flowing Water Background</strong>: A noise-driven animation mimics the appearance of flowing water.</li>
-                    </ul>
-                  
-                    <h2 class="mt-8">Technologies</h2>
+                    <h2 class="mt-8">Our Insights</h2>
                     <ul class="list-disc list-inside ml-5">
-                      <li><strong>- ML5.js</strong>: For real-time human pose detection using the <code>bodyPose</code> model.</li>
-                      <li><strong>- p5.js</strong>: For interactive visuals, animation, and drawing the water ripples and background.</li>
-                      <li><strong>- JavaScript</strong>: Core logic for handling pose detection, ripple timing, and dynamic rendering.</li>
+                      <li>We <strong>interviewed peers</strong> to understand why conversations with matches often fizzle out. The feedback was clear:
+                      <li>- Asking someone out too soon can feel rushed, making it hard to continue the conversation.</li>
+                      <li>- Waiting too long to ask leaves both parties unsure how to transition to meeting offline.</li>
                     </ul>
-                  
-                    <h2 class="mt-8">How It Works</h2>
-                    <ol class="ml-5">
-                      <li><strong>- Pose Detection:</strong>
-                        <ul class="ml-5">
-                          <li>A live video feed is captured using <code>p5.Video</code>.</li>
-                          <li>The <code>bodyPose</code> model identifies keypoints of the body (e.g., eyes, hands, elbows, knees).</li>
-                        </ul>
+                    <h2 class="mt-8">Proposed Features</h2>
+                      <li><strong>The Green Light to Meet Button</strong>: Allows users to express interest in meeting up by inputting a date idea. When both parties are ready, the button turns green, signaling mutual interest.</li>
+                    </ul>
                       </li>
-                      <li><strong>- Ripple Generation:</strong>
-                        <ul class="ml-5">
-                          <li>When keypoints exceed a confidence threshold, a ripple effect is generated at the corresponding location.</li>
-                          <li>Ripples grow and fade over time, disappearing after 10 seconds.</li>
-                        </ul>
-                      </li>
-                      <li><strong>- Water Background:</strong>
-                        <ul class="ml-5">
-                          <li>A noise-based color grid creates a dynamic, flowing water effect as the backdrop.</li>
-                        </ul>
-                      </li>
-                    </ol>
+                      <li><strong>Well-Beeing Safety Checklist</strong>: An optional feature that offers a risk assessment for the planned date and safety tips.</li>
+                      <li><strong>The Buzz Word System</strong>: Combines audio tracking, trigger phrase recognition, and a discreet alert system. In unsafe situations, users can activate an emergency response without anyone noticing.</li>
+                    </ul>
             </div>
             <img class="col-span-full mb-8" src="./images/case_study_2.png" alt="">
             <img class="col-span-full md:col-span-6 mb-8" src="./images/case_study_3.png" alt="">

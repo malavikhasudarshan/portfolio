@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malavikha Sudarshan</title>
+    <title>Carbon - Case Study</title>
     <!--=================================-->
     <!--==== Google font ================-->
     <!--=================================-->
@@ -37,50 +37,78 @@
         </div>
     </header>
     <!--=================================-->
-    <!--==== Works ======================-->
+    <!--==== Title ======================-->
     <!--=================================-->
-    <section class="pt-8 md:pt-28 pb-8 lg:pb-40">
+    <section class="pt-8 md:pt-28 pb-8 lg:pb-8">
         <div class="container grid grid-cols-12 gap-8">
-            <h1 class="text-xl md:text-2xl lg:text-3xl font-medium col-span-12 lg:col-span-8 mb-8">Digital Projects</h1>
+            <div class="col-span-12 lg:col-span-8">
+                <h1 class="text-lg">Computer Vision, Interactive Art</h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-medium">Pose-Driven Interactive Water Ripples</h2>
+            </div>
         </div>
+    </section>
+    <!--=================================-->
+    <!--==== Cover Image ================-->
+    <!--=================================-->
+    <section class="h-64 lg:h-screen-90 w-full bg-no-repeat bg-center bg-cover" style="background-image: url(./assets/ripples1.png);"></section>
+    <!--=================================-->
+    <!--==== Content ====================-->
+    <!--=================================-->
+    <section class="mt-8 lg:mt-20 pb-16">
         <div class="container grid grid-cols-12 gap-8">
-            <div class="col-span-12 md:col-span-6">
-                <!-- Project card -->
-                <a href="case-study.html" class="block relative mb-16 mt-32">
-                    <img class="relative -z-10" src="./assets/work_thumbnail_1.jpg" alt="">
-                    <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
-                        <p>Salonat</p>
-                        <h3 class="text-lg lg:text-xl font-medium">Premium furniture eCommerce website</h3>
-                    </div>
-                </a>
-                <!-- Project card -->
-                <a href="case-study.html" class="block relative mb-16">
-                    <img class="relative -z-10" src="./assets/work_thumbnail_2.jpg" alt="">
-                    <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
-                        <p>Zajil</p>
-                        <h3 class="text-lg lg:text-xl font-medium">AI-based cold mailing SAAS website</h3>
-                    </div>
-                </a>
+            <div class="col-span-full grid grid-cols-12 gap-8">
+                <div class="flex flex-col col-span-full md:col-span-6">
+                    <p class="text-sm mb-4">Live Demo</p>
+                    <p class="font-medium underline" href="https://malavikhasudarshan.github.io/ripples/">malavikhasudarshan.github.io/ripples/</a>
+                </div>
+                <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-3">
+                    <p class="text-sm mb-4">Code</p>
+                    <a class="font-medium underline" href="https://github.com/malavikhasudarshan/ripples/">github.com/malavikhasudarshan/ripples</a>
+                </div>
+                <div class="col-span-12 lg:col-span-10 text-lg font-medium my-8">
+                    <p>
+                      A creative, interactive visual project using <strong>ML5.js</strong> and <strong>p5.js</strong> to simulate dynamic water ripples based on human motion detection. This program detects keypoints from a live camera feed, generates ripples where motion is detected, and overlays them on a flowing, water-like background with a pixelated, noise-driven effect.
+                    </p>
+                  
+                    <h2 class="mt-8">Features</h2>
+                    <ul class="list-disc ml-5">
+                      <li><strong>- Real-Time Pose Detection</strong>: Utilises the <strong>ML5.js</strong> <code>bodyPose</code> model to track body keypoints with confidence thresholds.</li>
+                      <li><strong>- Dynamic Ripple Effects</strong>: Ripples appear at detected keypoint positions and fade away after 10 seconds.</li>
+                      <li><strong>- Flowing Water Background</strong>: A noise-driven animation mimics the appearance of flowing water.</li>
+                    </ul>
+                  
+                    <h2 class="mt-8">Technologies</h2>
+                    <ul class="list-disc list-inside ml-5">
+                      <li><strong>- ML5.js</strong>: For real-time human pose detection using the <code>bodyPose</code> model.</li>
+                      <li><strong>- p5.js</strong>: For interactive visuals, animation, and drawing the water ripples and background.</li>
+                      <li><strong>- JavaScript</strong>: Core logic for handling pose detection, ripple timing, and dynamic rendering.</li>
+                    </ul>
+                  
+                    <h2 class="mt-8">How It Works</h2>
+                    <ol class="ml-5">
+                      <li><strong>- Pose Detection:</strong>
+                        <ul class="ml-5">
+                          <li>A live video feed is captured using <code>p5.Video</code>.</li>
+                          <li>The <code>bodyPose</code> model identifies keypoints of the body (e.g., eyes, hands, elbows, knees).</li>
+                        </ul>
+                      </li>
+                      <li><strong>- Ripple Generation:</strong>
+                        <ul class="ml-5">
+                          <li>When keypoints exceed a confidence threshold, a ripple effect is generated at the corresponding location.</li>
+                          <li>Ripples grow and fade over time, disappearing after 10 seconds.</li>
+                        </ul>
+                      </li>
+                      <li><strong>- Water Background:</strong>
+                        <ul class="ml-5">
+                          <li>A noise-based color grid creates a dynamic, flowing water effect as the backdrop.</li>
+                        </ul>
+                      </li>
+                    </ol>
             </div>
-            <div class="col-span-12 md:col-span-6">
-                <!-- Project card -->
-                <a href="case-study.html" class="block relative mb-16">
-                    <img class="relative -z-10" src="./assets/work_thumbnail_3.jpg" alt="">
-                    <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
-                        <p>JD</p>
-                        <h3 class="text-lg lg:text-xl font-medium">Portfolio website for an independent designer</h3>
-                    </div>
-                </a>
-                <!-- Project card -->
-                <a href="case-study.html" class="block relative mb-16">
-                    <img class="relative -z-10" src="./assets/work_thumbnail_4.jpg" alt="">
-                    <div class="bg-white w-10/12 pt-4 pr-4 -mt-24">
-                        <p>Bayt Property</p>
-                        <h3 class="text-lg lg:text-xl font-medium">Real estate services company website
-                        </h3>
-                    </div>
-                </a>
-            </div>
+            <img class="col-span-full mb-8" src="./images/case_study_2.png" alt="">
+            <img class="col-span-full md:col-span-6 mb-8" src="./images/case_study_3.png" alt="">
+            <img class="col-span-full md:col-span-6 mb-8" src="./images/case_study_4.png" alt="">
+            <img class="col-span-full mb-8" src="./images/case_study_1.png" alt="">
         </div>
     </section>
     <!--=================================-->

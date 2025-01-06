@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon - Case Study</title>
+    <!--=================================-->
+    <!--==== Google font ================-->
+    <!--=================================-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <!--=================================-->
+    <!--==== Main styles ================-->
+    <!--=================================-->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--=================================-->
+    <!--==== Hero =======================-->
+    <!--=================================-->
+    <header class="pt-10 lg:pt-8">
+        <div class="container">
+            <nav class="flex justify-between font-medium">
+                <a class="hidden md:inline" href="index.html">About</a>
+                <a class="hidden md:inline" href="roles.html">Roles</a>
+                <a class="hidden md:inline" href="projects.html">Projects</a>
+                <a class="hidden md:inline" href="art.html">Art + Design</a> 
+                <!-- use an anchor tag to link to photography section and have contact info underneath -->
+                <a class="hidden md:inline" href="https://www.instagram.com/photosbymalavikha/">Photography</a>
+                <button id="mobile_menu_trigger" class="inline md:hidden"><svg width="24" height="15" viewBox="0 0 24 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect y="0.5" width="24" height="4" fill="#201F27"/>
+                    <rect x="12" y="10.5" width="12" height="4" fill="#201F27"/>
+                </svg></button>
+            </nav>
+        </div>
+    </header>
+    <!--=================================-->
+    <!--==== Title ======================-->
+    <!--=================================-->
+    <section class="pt-8 md:pt-28 pb-8 lg:pb-8">
+        <div class="container grid grid-cols-12 gap-8">
+            <div class="col-span-12 lg:col-span-8">
+                <h1 class="text-lg">Game Design, Interactive Art</h1>
+                <h2 class="text-xl md:text-2xl lg:text-3xl font-medium">Catch the Coo!</h2>
+            </div>
+        </div>
+    </section>
+    <!--=================================-->
+    <!--==== Cover Image ================-->
+    <!--=================================-->
+    <section class="h-64 lg:h-screen-90 w-full bg-no-repeat bg-center bg-cover" style="background-image: url(./assets/catch_the_coo.png);"></section>
+    <!--=================================-->
+    <!--==== Content ====================-->
+    <!--=================================-->
+    <section class="mt-8 lg:mt-20 pb-16">
+        <div class="container grid grid-cols-12 gap-8">
+            <div class="col-span-full grid grid-cols-12 gap-8">
+                <div class="flex flex-col col-span-full md:col-span-6">
+                    <a class="font-medium underline" href="https://editor.p5js.org/malavikhasudarshan/full/xKV7zgRTy">Live Demo</a>
+                </div>
+                <div class="flex flex-col col-span-full md:col-span-6 lg:col-span-3">
+                    <a class="font-medium underline" href="https://editor.p5js.org/malavikhasudarshan/sketches/xKV7zgRTy">Code</a>
+                </div>
+                <div class="col-span-12 lg:col-span-10 text-lg font-medium my-8">
+                    <p>
+                        <strong>"Catch the Coo!"</strong> is a whimsical game I developed using <strong>p5.js, HTML</strong> and <strong>JavaScript</strong>, inspired by the picturesque Scottish hills I call home. Players take on the role of Scott, an adventurous sheep, tasked with helping his friend Hamish—a highland cow with overgrown hair and limited visibility—find his way home. Players explore the vibrant, handrawn landscape using simple controls: arrow keys for movement and the space bar to jump. See what happens if you try to move Scott off the edge of the screen!
+                    </p>
+
+                    <h2 class="mt-8">Features</h2>
+                    The game was designed to be approachable for all ages, incorporating:
+                      <li><strong>Collision Detection</strong>: A bounding box system ensures accurate interactions between Scott and Hamish.</li>
+                      <li><strong>Dynamic Environments</strong>: The background changes color as Scott explores.</li>
+                      <li><strong>Custom Artwork</strong>: I created the visuals using Adobe Fresco for the sheep and scenery and Pixilart for Hamish, blending hand-drawn and pixel art styles.</li>
+                    </div>
+                    <div class="mt-8 col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-8 lg:mb-16 gap-8">
+                        <a href="https://editor.p5js.org/malavikhasudarshan/full/xKV7zgRTy" class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Live Demo</a>
+                      </div>
+            <!-- <img class="col-span-full mb-8" src="./images/case_study_2.png" alt="">
+            <img class="col-span-full md:col-span-6 mb-8" src="./images/case_study_3.png" alt="">
+            <img class="col-span-full md:col-span-6 mb-8" src="./images/case_study_4.png" alt="">
+            <img class="col-span-full mb-8" src="./images/case_study_1.png" alt=""> -->
+        </div>
+    </div>
+    </section>
+    <!--=================================-->
+    <!--==== Footer =====================-->
+    <!--=================================-->
+    <footer class="pt-24 pb-8 bg-bg">
+        <div class="container relative grid grid-cols-12 gap-8">
+            <!-- <div class="col-start-1 lg:col-start-4 col-span-12 lg:col-span-6 flex flex-col justify-center text-center mb-8 lg:mb-16 ">
+            <a href="./contact.html" class="bg-primary hover:bg-transparent px-16 py-4 border border-solid border-primary text-white hover:text-primary text-center font-medium rounded-full no-underline col-span-2 self-center transition-colors duration-150">Let’s talk</a>
+            </div> -->
+            <div class="col-span-12 md:col-span-10 lg:col-span-8 col-start-1 md:col-start-2 lg:col-start-3 flex flex-col md:flex-row items-center justify-start md:justify-between space-y-4 md:space-y-0 text-lg font-medium mb-8">
+                <a href="https://github.com/malavikhasudarshan">Github</a>
+                <a href="https://scholar.google.com/citations?user=aVM9PUkAAAAJ&hl=en">Google Scholar</a>
+                <a href="https://www.linkedin.com/in/malavikha-sudarshan/">LinkedIn</a>
+            </div>
+            <div class="col-span-12 flex flex-col md:flex-row items-center md:items-start justify-start md:justify-between space-y-4 md:space-y-0"  style="color: white;">
+                <p>© 2022 All rights reserved.</p>
+                <p>Forked from <a href="https://www.myoussouf.com/">MYoussouf</a></p>
+            </div>
+        </div>
+    </footer>
+    <!--=================================-->
+    <!--==== Mobile Menu ================-->
+    <!--=================================-->
+    <div id="mobile_menu" class="w-full bg-primary text-white flex flex-col justify-center text-2xl space-y-4 fixed right-0 translate-x-full top-0  bottom-0 z-50 pl-8 transition-transform duration-500">
+        <button id="mobile_menu_close" class="absolute top-10 right-4 flex items-center text-base">close <svg class="ml-4" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="2.12109" y="0.454041" width="24" height="3" transform="rotate(45 2.12109 0.454041)" fill="#fff"/><rect y="17.4246" width="24" height="3" transform="rotate(-45 0 17.4246)" fill="#fff"/></svg></button>
+        <a href="index.html">Home</a>
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!--=================================-->
+    <!--==== Main JS ====================-->
+    <!--=================================-->
+    <script src="./js/scripts.js"></script>
+</body>
+</html>
